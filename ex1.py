@@ -5,4 +5,4 @@ def fatorial_recursivo(fatorial):
         return 1
 
     return fatorial  * fatorial_recursivo(fatorial -1)
-    
+fatorial_recursivo()

@@ -36,3 +36,5 @@ meses, valor_investido_brl, saldo_final_brl = bitcoin()
 print(f"- Meses: {meses}")
 print(f"- Valor investido (BRL): R$ {valor_investido_brl:.2f}")
 print(f"- Saldo final (BRL): R$ {saldo_final_brl:.2f}")
+
+bitcoin()

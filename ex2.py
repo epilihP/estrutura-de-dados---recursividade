@@ -6,3 +6,4 @@ def soma_list_recursivasso(lista):
         return 0
     
     return 0 + soma_list_recursivasso[1:]
+soma_list_recursivasso()

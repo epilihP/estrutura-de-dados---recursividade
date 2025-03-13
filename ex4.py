@@ -15,3 +15,5 @@ def poupança():
             else:
                 continue
         return print("U dont can né?!")
+    
+poupança()

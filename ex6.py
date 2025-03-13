@@ -33,3 +33,4 @@ def ações():
     print("Saldo final:", "R$", round(saldo, 2))
     
     
+ações()
