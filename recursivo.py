@@ -17,7 +17,10 @@ def soma_list_recursivasso(lista):
 
 #  EX 3 INVERSÃO DE STRING
 
-
+def inversão(texto):
+    if len(texto) == 0:
+        return texto
+    return texto[-1] + inversão(texto[:-1])
 
 
 # EX 4
@@ -32,8 +35,10 @@ def poupança():
             poupança +=renda + (renda*0,05)
             atual = poupança * i[0]
             if atual >= 1000000:
-                return print("U have 1billion")
+                return print("U have 1bi")
             else:
                 continue
         return print("U dont can né?!")
+ 
+
     
