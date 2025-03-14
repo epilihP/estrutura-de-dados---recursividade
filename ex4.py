@@ -1,19 +1,25 @@
 
 # EX 4
+dolar = [4.95, 4.97, 5.01, 5.19, 5.24, 5.59, 5.65, 5.61, 5.42, 5.78, 5.97, 6.17]
+atual = 0
 
-def poupança():
-    poupança = 0
-    while poupança != 1000000:
-        
-        dolar = [4.9526, 4.9716, 5.0153, 5.1934, 5.2443, 5.5925, 5.6500, 5.6103, 5.4482, 5.7867, 5.9730, 6.1778] # meses do dolar taca na recusiva 
-        for i in range (dolar):
-            renda = (i[0] % poupança())
-            poupança +=renda + (renda*0,05)
-            atual = poupança * i[0]
-            if atual >= 1000000:
-                return print("U have 1bi")
-            else:
-                continue
-        return print("U dont can né?!")
+def cofrinho(salario, mes = 0): #mes = 0 é o valor padrão para o mês, que é o primeiro mês de   
+    salario
     
-poupança()
+    poupança = salario
+    
+    cotacao_hoje = dolar[mes % 12]
+    renda =  poupança %  cotacao_hoje
+    
+    poupança += renda + (renda * 0.05)
+    atual = poupança * cotacao_hoje
+    if atual == 1000000:
+        return print("congratulations")
+    
+    if atual >=100000:
+        print("100k")
+    
+    mes +=1
+    return cofrinho(salario, mes) # tipo while, mas recursivo
+
+print(cofrinho(500))
